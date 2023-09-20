@@ -1,0 +1,332 @@
+@import '../fonts/fonts.css';
+
+$color-black: #000;
+$color-black-medium: #2C2B31;
+$color-gray-light: #F0F0F0;
+$color-orange: #F19D2F;
+$color-orange-light: #FFD1AC;
+$color-orange-dark: #E27500;
+$color-white: #fff;
+$color-green-medium: #37D997;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 395px) {
+  .header {
+    background-color: $color-orange;
+    padding: 0 13px;
+
+    .header-title {
+      color: $color-black-medium;
+      text-align: center;
+      font-family: 'Gotham Pro', sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 10px 0;
+    }
+
+    ::before {
+      content: url('../img/icon-south-africa.png');
+      height: 20px;
+      width: 20px;
+    }
+
+    ::after {
+      content: url('../img/icon-south-africa.png');
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+
+  .main {
+    .main-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 19px 0;
+      background-color: $color-orange-light;
+    }
+
+    .main-offer {
+      min-height: 280px;
+      background-image: url('../img/1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 13px;
+      display: flex;
+      align-items: flex-end;
+
+      .wrapper-offer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: $color-white;
+        font-family: 'Gotham Pro', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+
+        .offer-timer {
+          min-height: 58px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          background: $color-orange;
+          padding: 0 7px;
+          border-radius: 7px;
+
+          p {
+            font-size: 10px;
+          }
+
+          div {
+            font-size: 20px;
+          }
+        }
+
+        .offer-price {
+          min-height: 58px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          background: $color-green-medium;
+          padding: 0 7px;
+          border-radius: 7px;
+          position: relative;
+
+          :first-of-type {
+            font-size: 18px;
+          }
+
+          hr {
+            display: inline-block;
+            width: 90px;
+            height: 3px;
+            background-color: $color-orange-dark;
+            position: absolute;
+            top: 12px;
+            border: none;
+            border-radius: 3px;
+          }
+
+          :last-of-type {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .main-slippers {
+      padding: 0 17px;
+      background-color: $color-gray-light;
+
+      .wrapper-slippers-specials {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 20px;
+
+        p {
+          color: $color-black-medium;
+          font-family: 'Gotham Pro', sans-serif;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        a {
+          color: $color-green-medium;
+          font-family: 'Gotham Pro', sans-serif;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      .slippers-title {
+        color: $color-black-medium;
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 230px;
+      }
+
+      .image-mini-slider {
+        width: 100%;
+        height: 66px;
+        padding-top: 20px;
+      }
+
+      .image-mini-slider__slide {
+        opacity: 1;
+        transition: all ease .3s;
+      }
+
+      .image-mini-slider__slide.swiper-slide-thumb-active {
+        opacity: .4;
+      }
+
+      .image-mini-slider__image {
+        position: relative;
+        padding: 0 0 82% 0;
+        cursor: pointer;
+
+        img {
+          object-fit: cover;
+          position: absolute;
+          width: 100%x;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .text-delivery {
+        padding-top: 40px;
+        color: $color-black;
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+
+        ::after {
+          content: url('../img/icon-south-africa.png');
+          display: inline-block;
+          position: absolute;
+          position: absolute;
+          left: 260px;
+        }
+      }
+
+      .text-in-stock {
+        padding-top: 10px;
+        color: $color-black;
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+
+        ::after {
+          content: url('../img/icon-south-africa.png');
+          display: inline-block;
+          position: absolute;
+          position: absolute;
+          left: 310px;
+        }
+      }
+
+      .wrapper-stars {
+        padding-top: 12px;
+        display: flex;
+        gap: 3px;
+        align-items: center;
+
+        p {
+          padding-left: 10px;
+          color: $color-black-medium;
+          font-family: 'Gotham Pro', sans-serif;
+          font-size: 16;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      .form-user {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+          position: relative;
+
+          p {
+            text-align: center;
+            font-size: 10px;
+            color: $color-black-medium;
+            font-family: 'Gotham Pro', sans-serif;
+          }
+
+          select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance:$color-black;
+            width: 170px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Gotham Pro', sans-serif;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            background: $color-white;
+            border-radius: 7px;
+            padding: 15px 20px 15px 30px;
+          }
+
+          svg {
+            position: absolute;
+            top: 35px;
+            right: 10px;
+          }
+
+          svg.open {
+            transform: rotate(180deg);
+          }
+
+        }
+
+        button {
+          width: 100%;
+          margin: 20px 0 40px;
+          background-color: $color-green-medium;
+          border: none;
+          outline: none;
+          border-radius: 15px;
+          padding: 11px 0;
+
+          a {
+            color: $color-white;
+            font-family: 'Gotham Pro', sans-serif;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
